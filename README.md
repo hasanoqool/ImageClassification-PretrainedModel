@@ -11,7 +11,6 @@ Classification and Transfer Learning for images
     * Using data augmentation to improve performance with the Keras API, tf.data and tf.image APIs
 
 #
-
 ## Running detect_smiles.py
 * Train a smile classifier from scratch on the <b>SMILEs dataset</b>.
 
@@ -19,5 +18,12 @@ Classification and Transfer Learning for images
 | ------------- | ------------- |
 |   |   |
 
+* Sample Images --> up (Negative) | down (Positive)
 
+    ![Negative](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/negative.png)
+
+
+    • Using a <b>visual diagram</b>.
+
+    ![Positive](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/positive.png)
 #

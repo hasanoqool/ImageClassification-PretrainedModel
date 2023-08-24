@@ -20,7 +20,7 @@ def load_images_and_labels(image_paths):
     """
     * Load images and labels from list of file paths.
 
-    * Parameters: 
+    * Parameters: reame
         - image_paths: dataset path from directory.
 
     * Return:
@@ -155,7 +155,7 @@ def main():
 
     (X_train, y_train),(X_test, y_test),(X_val, y_val) = train_test_valid(X, y)
 
-    print((X_train.shape, y_train.shape),(X_test.shape, y_test.shape),(X_val.shape, y_val.shape))
+    # print((X_train.shape, y_train.shape),(X_test.shape, y_test.shape),(X_val.shape, y_val.shape))
 
     model.fit(X_train, y_train,validation_data=(X_val, y_val),epochs=EPOCHS, batch_size=BATCH_SIZE,
     class_weight={

@@ -22,7 +22,15 @@ Classification and Transfer Learning for images
 
 * <b>Model Evaluation</b>:
 
+| train_loss  |  train_accuracy |
+| ------------- | ------------- |
+|  0.5435 |  0.8920 |
+
+| val_loss  |  val_accuracy |
+| ------------- | ------------- |
+|  0.2501 |  0.9193 |
+
 | test_loss  |  test_accuracy |
 | ------------- | ------------- |
-|  0.2 |  0.8 |
+|  0.2077 |  0.9225 |
 #

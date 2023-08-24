@@ -18,7 +18,7 @@ def load_images_labels(image_paths):
     """
     * Load images and labels from list of file paths.
 
-    * Parameters:
+    * Parameters: 
         - image_paths: dataset path from directory.
 
     * Return:
@@ -42,5 +42,5 @@ def load_images_labels(image_paths):
     return np.array(images), np.array(labels)
 # print(load_images_labels.__doc__)
 
-s = float("post" in "post")
+s = float("post" in "post.dd")
 print(s)

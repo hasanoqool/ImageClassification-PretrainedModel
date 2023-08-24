@@ -14,10 +14,6 @@ Classification and Transfer Learning for images
 ## Running detect_smiles.py
 * Train a smile classifier from scratch on the <b>SMILEs dataset</b>.
 
-| test_loss  |  test_accuracy |
-| ------------- | ------------- |
-|   |   |
-
 * Sample Images --> up (Negative) | down (Positive)
 
     ![Negative](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/negative.png)
@@ -26,4 +22,9 @@ Classification and Transfer Learning for images
     • Using a <b>visual diagram</b>.
 
     ![Positive](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/positive.png)
+
+
+| test_loss  |  test_accuracy |
+| ------------- | ------------- |
+|  0.2 |  0.8 |
 #

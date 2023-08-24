@@ -21,6 +21,7 @@ Classification and Transfer Learning for images
     ![Positive](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/positive.png)
 
 * <b>Model Evaluation</b>:
+
 | test_loss  |  test_accuracy |
 | ------------- | ------------- |
 |  0.2 |  0.8 |

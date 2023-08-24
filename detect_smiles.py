@@ -4,10 +4,30 @@ Hasan Al-Oqool : https://www.linkedin.com/in/hasanoqool/
 """
 
 #===============Import the required libraries===============
+import os
+import pathlib
+import glob
+import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelBinarizer
-from keras import Input
-from keras.datasets import mnist #0-9 digits (10 classes) 28*28*1CH
-from keras.layers import Dense
-from keras.models import Model, Sequential
+from keras.layers import *
+from tensorflow.keras.preprocessing.image import *
 #===============Import the required libraries===============
+
+
+def load_images_labels(image_paths):
+    """
+    * Load images and labels from list of file paths.
+
+    * Parameters:
+        - image_paths: dataset path from directory.
+
+    * Return:
+        - Numpy array --> array(features, labels).
+
+    """
+    images = []
+    labels = []    
+
+    for image_path in image_paths:
+        image = load
+# print(load_images_labels.__doc__)

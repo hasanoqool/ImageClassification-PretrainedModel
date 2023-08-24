@@ -18,9 +18,6 @@ Classification and Transfer Learning for images
 
     ![Negative](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/negative.png)
 
-
-    • Using a <b>visual diagram</b>.
-
     ![Positive](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/positive.png)
 
 

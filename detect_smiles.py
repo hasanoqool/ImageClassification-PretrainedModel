@@ -29,5 +29,5 @@ def load_images_labels(image_paths):
     labels = []    
 
     for image_path in image_paths:
-        image = load
+        image = loa
 # print(load_images_labels.__doc__)

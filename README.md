@@ -13,6 +13,7 @@ Classification and Transfer Learning for images
 #
 ## Running detect_smiles.py
 * Train a smile classifier from scratch on the <b>SMILEs dataset</b>.
+* Dataset LINK : <b>https://github.com/hromi/SMILEsmileD/tree/master</b>
 
 * <b>Sample Images</b> --> up (Negative) | down (Positive)
 

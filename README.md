@@ -35,3 +35,15 @@ Classification and Transfer Learning for images
     | ------------- | ------------- |
     |  0.2077 |  0.9225 |
 #
+## Running rock-paper-scissors.py
+* Creating a multi-class classifier to play <b>rock paper scissors</b>.
+* Dataset LINK : <b>https://www.kaggle.com/datasets/drgfreeman/rockpaperscissors</b>
+
+* <b>Sample Images</b> --> 1st (rock) | 2nd (paper) | 3rd (scissors)
+
+    ![rock](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/rock.png)
+
+    ![paper](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/paper.png)
+
+    ![paper](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/scissors.png)
+

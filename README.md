@@ -47,3 +47,16 @@ Classification and Transfer Learning for images
 
     ![paper](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/scissors.png)
 
+* <b>Model Evaluation</b>:
+
+    | train_loss  |  train_accuracy |
+    | ------------- | ------------- |
+    |  0.1130 |  0.9821 |
+
+    | val_loss  |  val_accuracy |
+    | ------------- | ------------- |
+    |  0.2074 |  0.9457 |
+
+    | test_loss  |  test_accuracy |
+    | ------------- | ------------- |
+    |  0.2344 |  0.9338 |

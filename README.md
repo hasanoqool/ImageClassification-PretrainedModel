@@ -94,3 +94,10 @@ Classification and Transfer Learning for images
     |  Women |  99.91% |
  
     Ground truth labels: [('Casual', 'Women')] --> CORRECT
+#
+## Running watches.py
+* Creating a multi-label classifier to label <b>watches</b>.
+* Dataset LINK : <b>https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small</b>
+
+ 
+

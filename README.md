@@ -67,7 +67,7 @@ Classification and Transfer Learning for images
 
 * <b>Sample Images</b> 
 
-    ![watch](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/rock.png)
+    ![watch](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/watch.png)
 
 * <b>Model Evaluation</b>:
 

@@ -85,12 +85,13 @@ Classification and Transfer Learning for images
 
 * <b>Conclusion</b>:
 
-    | class  |  probability |
+    | class  | | class  |  probability |
     | ------------- | ------------- |
-    |  Casual |  92.31%|
-    |  Formal |  3.89% |
-    |  Smart Casual |  0.62% |
-    |  Men |  0.34% |
-    |  Women |  99.91% |
+    |  Usage ||  Casual |  92.31%||  Formal |  3.89% ||  Smart Casual |  0.62% |
+    
+    
+    | ------------- | ------------- |
+    |  Gender ||  Men |  0.34% ||  Women |  99.91% |
+    
  
     Ground truth labels: [('Casual', 'Women')] --> CORRECT

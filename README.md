@@ -95,7 +95,7 @@ Classification and Transfer Learning for images
  
     Ground truth labels: [('Casual', 'Women')] --> CORRECT
 #
-## Running watches.py
+## Running ResNet.py
 * Implementing <b>ResNet</b> from <b>scratch</b>.
 * Dataset LINK : <b>https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small</b>
 

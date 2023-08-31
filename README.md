@@ -65,7 +65,7 @@ Classification and Transfer Learning for images
 * Creating a multi-label classifier to label <b>watches</b>.
 * Dataset LINK : <b>https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small</b>
 
-* <b>Sample Images</b> 
+* <b>Sample Image from test data</b> 
 
     ![watch](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/watch.png)
 
@@ -82,3 +82,15 @@ Classification and Transfer Learning for images
     | test_loss  |  test_accuracy |
     | ------------- | ------------- |
     |  0.2616 |  0.9766 |
+
+* <b>Conclusion</b>:
+
+    | class  |  probability |
+    | ------------- | ------------- |
+    |  Casual |  92.31%|
+    |  Formal |  3.89% |
+    |  Smart Casual |  0.62% |
+    |  Men |  0.34% |
+    |  Women |  99.91% |
+ 
+    Ground truth labels: [('Casual', 'Women')] --> CORRECT

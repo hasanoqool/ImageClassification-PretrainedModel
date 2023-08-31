@@ -60,3 +60,25 @@ Classification and Transfer Learning for images
     | test_loss  |  test_accuracy |
     | ------------- | ------------- |
     |  0.2344 |  0.9338 |
+#
+## Running watches.py
+* Creating a multi-label classifier to label <b>watches</b>.
+* Dataset LINK : <b>https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small</b>
+
+* <b>Sample Images</b> 
+
+    ![watch](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/rock.png)
+
+* <b>Model Evaluation</b>:
+
+    | train_loss  |  train_accuracy |
+    | ------------- | ------------- |
+    |  0.0288 |  0.6218 |
+
+    | val_loss  |  val_accuracy |
+    | ------------- | ------------- |
+    |  0.2812 |  0.9708 |
+
+    | test_loss  |  test_accuracy |
+    | ------------- | ------------- |
+    |  0.2616 |  0.9766 |

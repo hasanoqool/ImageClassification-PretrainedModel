@@ -12,7 +12,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MultiLabelBinarizer
 from keras.layers import *
-from keras.models import Sequential
+from keras.models import *
 from keras.preprocessing.image import *
 #===============Import the required libraries===============
 
@@ -155,7 +155,7 @@ def watch_label():
     * Normalize the images and multi-hot encode the labels
 
     * Return:
-        - np array --> image features(x), labels(y).
+        - np array --> image features(x), labels(y), classes, mlb.
     
     '''
 
@@ -168,7 +168,7 @@ def watch_label():
     label = mlb.fit_transform(label)
     classes = mlb.classes_
 
-    return image, label, classes
+    return image, label, classes, mlb
 
 
 def train_valid_test():
@@ -176,15 +176,15 @@ def train_valid_test():
     * Prepare train, test, and validation subsets of datasets.
 
     * Return:
-        - tuple of train, valid, test datasets and len of multilabel classes.
+        - tuple of train, valid, test datasets, len of multilabel classes and mlb.
     '''
 
-    image, label, classes = watch_label()
+    image, label, classes, mlb = watch_label()
 
     X_train, X_test, y_train, y_test = train_test_split(image, label, test_size=0.2, random_state=SEED)
     X_train, X_valid, y_train, y_valid = train_test_split(X_train, y_train,test_size=0.2, random_state=SEED)
 
-    return X_train, y_train, X_valid, y_valid, X_test, y_test, classes
+    return X_train, y_train, X_valid, y_valid, X_test, y_test, classes, mlb
 
 
 def build_compile(model):
@@ -201,7 +201,7 @@ def build_compile(model):
 def main():
 
     #data
-    X_train, y_train, X_valid, y_valid, X_test, y_test, classes = train_valid_test()
+    X_train, y_train, X_valid, y_valid, X_test, y_test, classes, mlb = train_valid_test()
 
     #fit
     EPOCHS = 20
@@ -216,6 +216,20 @@ def main():
     test_loss, test_accuracy = model.evaluate(X_test, y_test, batch_size=BATCH_SIZE)
     print(f"Test loss: {test_loss} and Test Accuracy {test_accuracy}.")
 
+    #Use the model to make predictions on a test image, 
+    # displaying the probability of each label
+    test_image = np.expand_dims(X_test[0], axis=0)
+    probabilities = model.predict(test_image)[0]
+    for label, p in zip(classes, probabilities):
+        print(f'{label}: {p * 100:.2f}%')
+
+    #Compare the ground truth labels with the network's prediction
+    ground_truth_labels = np.expand_dims(y_test[0], axis=0)
+    ground_truth_labels = mlb.inverse_transform(ground_truth_labels)
+    print(f'Ground truth labels: {ground_truth_labels}')
+
+    from matplotlib.pyplot import imshow
+    imshow(X_test[0])
 
 #run script
 if __name__ == "__main__":

@@ -186,7 +186,7 @@ def main():
 
     model_checkpoint_callback = ModelCheckpoint(filepath="./model.{epoch:02d}-{val_accuracy:.2f}.hdf5",save_best_only=False, monitor="val_accuracy")
 
-    epochs = 1
+    epochs = 20
     model.fit(train_dataset, validation_data=valid_dataset, epochs=epochs,callbacks=[model_checkpoint_callback])
 
     #load model for inference

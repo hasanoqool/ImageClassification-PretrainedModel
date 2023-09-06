@@ -96,7 +96,7 @@ Classification and Transfer Learning for images
     Ground truth labels: [('Casual', 'Women')] --> CORRECT
 #
 ## Running ResNet.py
-* Implementing <b>ResNet</b> from <b>scratch</b>.
+* Implementing <b>ResNet</b> from <b>scratch</b> and run it on <b>CINIC-10 dataset</b>.
 * Dataset LINK : <b>'https://datashare.is.ed.ac.uk/bitstream/handle/''10283/3192/CINIC-10.tar.gz?''sequence=4&isAllowed=y'</b>
 * Test accuracy : <b>70%</b>
 #

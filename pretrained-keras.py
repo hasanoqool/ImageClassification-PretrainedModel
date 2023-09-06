@@ -4,40 +4,55 @@ Hasan Al-Oqool : https://www.linkedin.com/in/hasanoqool/
 """
 
 #===============Import the required libraries===============
-import os
-import pathlib
-import glob
-import numpy as np
-from sklearn.model_selection import train_test_split
-from keras.layers import *
-from keras.models import Sequential
-from keras.preprocessing.image import load_img, img_to_array
 import matplotlib.pyplot as plt
+import numpy as np
+from keras.applications import imagenet_utils
+from keras.applications.inception_v3 import *
+from keras.preprocessing.image import *
 #===============Import the required libraries===============
 
 
-def load_images_and_labels(image_paths):
+def load_resize_image():
     """
-    * Load images and labels from list of file paths.
-
-    * Parameters: reame
-        - image_paths: dataset path from directory.
-
-    * Return:
-        - Numpy array --> array(features, labels).
-    """
-    images = []
-    labels = []    
-
-    for image_path in image_paths:
-
-        image = load_img(image_path, target_size=(32,32), color_mode="grayscale")
-        image = img_to_array(image)
-        label = image_path.split(os.path.sep)[-2]
-        label = "positive" in label
-        label = float(label)
-
-        images.append(image)
-        labels.append(label)
+    * Load the image to classify. Inception takes 299x299x3 image.
     
-    return np.array(images), np.array(labels)
+    * Return:
+        - preprocessed image shape --> (batch, height, width, CH).
+    """
+    image = load_img("./images/dog.png", target_size=(299, 299))
+    image = img_to_array(image)
+    image = np.expand_dims(image, axis=0)
+
+    image = preprocess_input(image)    
+    return image
+
+model = InceptionV3(weights="imagenet")
+
+def predict_and_plot(model):
+    """
+    * Use the model to make predictions on the image and decode predictions,
+      and examine the top 6 predictions along with their probability.
+    """
+    #predict
+    image = load_resize_image()  
+    predictions = model.predict(image)
+    predictions_matrix = (imagenet_utils.decode_predictions(predictions))
+
+    for i in range(6):
+        _, label, probability = predictions_matrix[0][i]
+        print(f"{i + 1}. {label}: {probability * 100:.3f}%")
+    #predict
+
+    #plot
+    _, label, _ = predictions_matrix[0][0]
+    plt.figure()
+    plt.title(f"Label: {label}")
+    original = load_img("./images/dog.png")
+    original = img_to_array(original)
+    plt.imshow(original / 255.)
+    plt.show()
+    #plot
+
+
+if __name__ == "__main__"::
+    predict_and_plot(model)

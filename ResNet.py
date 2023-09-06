@@ -148,9 +148,7 @@ def prepare_dataset(data_pattern, shuffle=True):
 
 def download_prepare_CINIC1_dataset():
 
-    DATASET_URL = ('https://datashare.is.ed.ac.uk/bitstream/handle/'
-'10283/3192/CINIC-10.tar.gz?'
-'sequence=4&isAllowed=y')
+    DATASET_URL = ('https://datashare.is.ed.ac.uk/bitstream/handle/''10283/3192/CINIC-10.tar.gz?''sequence=4&isAllowed=y')
 
     DATA_NAME = 'cinic10'
     FILE_EXTENSION = 'tar.gz'
@@ -183,19 +181,19 @@ def main():
 
     train_dataset, test_dataset, valid_dataset = download_prepare_CINIC1_dataset()
     
-    # model = build_resnet(input_shape=(32, 32, 3), classes=10, stages=(9,9,9), filters=(64,64,128,256),reg=5e-3)
-    # model.compile(loss="categorical_crossentropy", optimizer="rmsprop", metrics=["accuracy"])
+    model = build_resnet(input_shape=(32, 32, 3), classes=10, stages=(9,9,9), filters=(64,64,128,256),reg=5e-3)
+    model.compile(loss="categorical_crossentropy", optimizer="rmsprop", metrics=["accuracy"])
 
-    # model_checkpoint_callback = ModelCheckpoint(filepath="./model.{epoch:02d}-{val_accuracy:.2f}.hdf5",save_best_only=False, monitor="val_accuracy")
+    model_checkpoint_callback = ModelCheckpoint(filepath="./model.{epoch:02d}-{val_accuracy:.2f}.hdf5",save_best_only=False, monitor="val_accuracy")
 
-    # epochs = 20
-    # model.fit(train_dataset, validation_data=valid_dataset, epochs=epochs,callbacks=[model_checkpoint_callback])
+    epochs = 1
+    model.fit(train_dataset, validation_data=valid_dataset, epochs=epochs,callbacks=[model_checkpoint_callback])
 
-    # #load model for inference
-    # model = load_model('model.38-0.72.hdf5')
-    # result = model.evaluate(test_dataset)
-    # print(f'Test accuracy: {result[1]}')
-    import matplotlib.pyplot as plt
+    #load model for inference
+    model = load_model('model.38-0.72.hdf5')
+    result = model.evaluate(test_dataset)
+    print(f'Test accuracy: {result[1]}')
+    # import matplotlib.pyplot as plt
 
     # ### To visualize the images
     # plt.figure(figsize=(10, 10))

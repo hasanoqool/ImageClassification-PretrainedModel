@@ -98,6 +98,7 @@ Classification and Transfer Learning for images
 ## Running ResNet.py
 * Implementing <b>ResNet</b> from <b>scratch</b>.
 * Dataset LINK : <b>'https://datashare.is.ed.ac.uk/bitstream/handle/''10283/3192/CINIC-10.tar.gz?''sequence=4&isAllowed=y'</b>
+* Test accuracy : <b>70%</b>
 
  
 

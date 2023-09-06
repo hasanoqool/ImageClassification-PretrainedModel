@@ -148,7 +148,7 @@ def prepare_dataset(data_pattern, shuffle=True):
 
 def download_prepare_CINIC1_dataset():
 
-    DATASET_URL = ('https://datashare.is.ed.ac.uk/bitstream/handle/''10283/3192/CINIC-10.tar.gz?''sequence=4&isAllowed=y')
+    DATASET_URL = ('https://datashare.is.ed.ac.uk/bitstream/handle/10283/3192/CINIC-10.tar.gz?/sequence=4&isAllowed=y')
 
     DATA_NAME = 'cinic10'
     FILE_EXTENSION = 'tar.gz'

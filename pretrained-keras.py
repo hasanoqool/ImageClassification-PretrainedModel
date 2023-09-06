@@ -31,22 +31,22 @@ model = InceptionV3(weights="imagenet")
 def predict_and_plot(model):
     """
     * Use the model to make predictions on the image and decode predictions,
-      and examine the top 6 predictions along with their probability.
+      and examine the top 5 predictions along with their probability.
     """
     #predict
     image = load_resize_image()  
     predictions = model.predict(image)
     predictions_matrix = (imagenet_utils.decode_predictions(predictions))
 
-    for i in range(6):
+    for i in range(5):
         _, label, probability = predictions_matrix[0][i]
         print(f"{i + 1}. {label}: {probability * 100:.3f}%")
     #predict
 
     #plot
-    _, label, _ = predictions_matrix[0][0]
+    _, label, probability = predictions_matrix[0][0]
     plt.figure()
-    plt.title(f"Label: {label}")
+    plt.title(f"Label: {label} || {probability * 100:.3f}%")
     original = load_img("./images/dog.png")
     original = img_to_array(original)
     plt.imshow(original / 255.)
@@ -54,5 +54,5 @@ def predict_and_plot(model):
     #plot
 
 
-if __name__ == "__main__"::
+if __name__ == "__main__":
     predict_and_plot(model)

@@ -101,15 +101,17 @@ Classification and Transfer Learning for images
 * Test accuracy : <b>70%</b>
 #
 ## Running pretrained-keras.py
-* classifying images with a <b>pre-trained network (<b> using the Keras API.
+* Classifying images with a <b>pre-trained network (InceptionV3)<b> using the Keras API.
 
+    | label  |  class | |  probability |
+    | ------------- | ------------- | | ------------- |
+    |  1 |  pug | |  89.632 |
+    |  2 |  Brabancon_griffon | |  0.339% |
+    |  3 |  bull_mastiff | |  0.138% |
+    |  4 |  French_bulldog | |  0.134% |
+    |  5 |  Boston_bull | |  0.114% |
 
+* Sample Image Result. 
 
-
-1. pug: 89.632%
-2. Brabancon_griffon: 0.339%
-3. bull_mastiff: 0.138%
-4. French_bulldog: 0.134%
-5. Boston_bull: 0.114%
- 
+    ![dog](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/watch.png)
 

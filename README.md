@@ -104,12 +104,12 @@ Classification and Transfer Learning for images
 * Classifying images with a <b>pre-trained network (InceptionV3)<b> using the Keras API.
 
     | label  |  class | |  probability |
-    | ------------- | ------------- | | ------------- |
-    |  1 |  pug | |  89.632 |
-    |  2 |  Brabancon_griffon | |  0.339% |
-    |  3 |  bull_mastiff | |  0.138% |
-    |  4 |  French_bulldog | |  0.134% |
-    |  5 |  Boston_bull | |  0.114% |
+    | ------------- | ------------- | ------------- |
+    |  1 |  pug  |  89.632 |
+    |  2 |  Brabancon_griffon  |  0.339% |
+    |  3 |  bull_mastiff  |  0.138% |
+    |  4 |  French_bulldog  |  0.134% |
+    |  5 |  Boston_bull  |  0.114% |
 
 * Sample Image Result. 
 

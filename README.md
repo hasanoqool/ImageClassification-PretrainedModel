@@ -113,5 +113,5 @@ Classification and Transfer Learning for images
 
 * Sample Image Result. 
 
-    ![dog](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/watch.png)
+    ![dog](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/dog_result.png)
 

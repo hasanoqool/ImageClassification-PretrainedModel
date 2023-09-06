@@ -115,4 +115,10 @@ Classification and Transfer Learning for images
 * Sample Image Result. 
 
     ![dog](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/dog_result.png)
+#
+## Running pretrained-tf.py
+* Classifying images with a <b>pre-trained network (ResNetV2152)<b> using the TF Hub.
 
+* Sample Image Result. 
+
+    ![car](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/beetle_result.png)

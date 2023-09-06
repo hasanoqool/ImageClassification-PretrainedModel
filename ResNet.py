@@ -190,7 +190,7 @@ def main():
     model.fit(train_dataset, validation_data=valid_dataset, epochs=epochs,callbacks=[model_checkpoint_callback])
 
     #load model for inference
-    model = load_model('model.38-0.72.hdf5')
+    model = load_model('model.01-0.10.hdf5')
     result = model.evaluate(test_dataset)
     print(f'Test accuracy: {result[1]}')
     # import matplotlib.pyplot as plt

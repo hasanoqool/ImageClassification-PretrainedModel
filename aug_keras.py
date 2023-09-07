@@ -92,7 +92,7 @@ def plot_model_history(model_history, metric, plot_name):
     plt.title(f'{metric.upper()}')
     plt.ylim([0, 1])
     plt.savefig(f'{plot_name}.png')
-    plt.close()
+    plt.close() 
 
 
 def load_paths():

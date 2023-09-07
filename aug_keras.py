@@ -100,7 +100,7 @@ def load_paths():
     * Load the paths to all images in the dataset, excepting the ones of the BACKGROUND_Google class
     """
 
-    base_path = (pathlib.Path.home() /'Desktop' / 'data' /'caltech101' /'101_ObjectCategories')
+    base_path = (pathlib.Path.home() /'Desktop' / 'datasets' /'caltech101' /'101_ObjectCategories')
     images_pattern = str(base_path / '*' / '*.jpg')
     image_paths = [*glob(images_pattern)]
     image_paths = [p for p in image_paths if p.split(os.path.sep)[-2] !=  'BACKGROUND_Google']

@@ -128,13 +128,13 @@ Classification and Transfer Learning for images
 * Dataset LINK : https://data.caltech.edu/records/mzrjq-6wc02
 
 * Before <b>Augmentation</b>: 
-     Test accuracy: 0.66
+     Test accuracy: 0.62
 
     ![without](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_without_aug.png)
 
-* After <b>Augmentation</b>:   hooon wassalt
+* After <b>Augmentation</b>:
      Test accuracy: 0.66
 
-    ![with](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_without_aug.png)    
+    ![with](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_augmented.png)    
 
 

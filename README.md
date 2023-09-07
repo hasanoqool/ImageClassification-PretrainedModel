@@ -125,7 +125,7 @@ Classification and Transfer Learning for images
 #
 ## aug_keras.py
 * Using data augmentation to improve performance with the Keras API.
-* Dataset LINK : http://www.vision.caltech.edu/Image_Datasets/Caltech101/
+* Dataset LINK : https://data.caltech.edu/records/mzrjq-6wc02
 
 * Before <b>Augmentation</b>: 
      Test accuracy: 0.66

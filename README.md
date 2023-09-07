@@ -127,8 +127,8 @@ Classification and Transfer Learning for images
 * Using data augmentation to improve performance with the Keras API.
 * Dataset LINK : http://www.vision.caltech.edu/Image_Datasets/Caltech101/
 
-* Before <b>Augmentation</b>. 
-* Test accuracy: 0.6607142686843872
+* Before <b>Augmentation</b>: 
+     Test accuracy: 0.6607142686843872
 
     ![without](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_without_aug.png)
 

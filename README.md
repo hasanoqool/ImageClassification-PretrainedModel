@@ -128,7 +128,7 @@ Classification and Transfer Learning for images
 * Dataset LINK : http://www.vision.caltech.edu/Image_Datasets/Caltech101/
 
 * Before <b>Augmentation</b>: 
-     Test accuracy: 0.6607142686843872
+     Test accuracy: 0.66
 
     ![without](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_without_aug.png)
 

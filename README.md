@@ -132,4 +132,9 @@ Classification and Transfer Learning for images
 
     ![without](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_without_aug.png)
 
+* After <b>Augmentation</b>:   hooon wassalt
+     Test accuracy: 0.66
+
+    ![with](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_without_aug.png)    
+
 

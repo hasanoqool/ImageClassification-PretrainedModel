@@ -123,17 +123,33 @@ def main():
     EPOCHS = 40
     BATCH_SIZE = 64 
 
-    model = build_network(64, 64, 3, len(classes))
+    # model = build_network(64, 64, 3, len(classes))
 
-    model.compile(loss='categorical_crossentropy',optimizer='rmsprop',metrics=['accuracy'])        
+    # model.compile(loss='categorical_crossentropy',optimizer='rmsprop',metrics=['accuracy'])        
         
-    history = model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=EPOCHS, batch_size=BATCH_SIZE)
+    # history = model.fit(X_train, y_train, validation_data=(X_test, y_test), epochs=EPOCHS, batch_size=BATCH_SIZE)
+
+    # result = model.evaluate(X_test, y_test)
+
+    # print(f'Test accuracy: {result[1]}')
+
+    # plot_model_history(history, 'accuracy', 'normal')
+
+    #after Augmentation
+
+    model = build_network(64, 64, 3, len(classes))
+    model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
+
+    augmenter = ImageDataGenerator(horizontal_flip=True, rotation_range=30, width_shift_range=0.1,height_shift_range=0.1, shear_range=0.2, zoom_range=0.2, fill_mode='nearest')
+    train_generator = augmenter.flow(X_train, y_train, BATCH_SIZE)
+
+    hist = model.fit(train_generator, validation_data=(X_test, y_test), epochs=EPOCHS)
 
     result = model.evaluate(X_test, y_test)
 
     print(f'Test accuracy: {result[1]}')
 
-    plot_model_history(history, 'accuracy', 'normal')
+    plot_model_history(hist, 'accuracy', 'augmented')
 
 #run script
 if __name__ == "__main__":

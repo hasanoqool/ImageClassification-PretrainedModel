@@ -36,7 +36,7 @@ Classification, Pretrained models, and Augmentation for images.
     |  0.2077 |  0.9225 |
 #
 ## Running rock-paper-scissors.py
-* Train classifier to play RPS <b>rock paper scissors</b>.
+* Train classifier to play <b>RPS</b>.
 * Dataset LINK : <b>https://www.kaggle.com/datasets/drgfreeman/rockpaperscissors</b>
 
 * <b>Sample Images</b> --> 1st (rock) | 2nd (paper) | 3rd (scissors)

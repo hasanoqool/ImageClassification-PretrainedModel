@@ -2,7 +2,7 @@
 Classification, Pretrained models, and Augmentation for images.
 
 # Overview
-* This repo consists of 6 main topics:
+* The steps of this project are the following:
     * Train a binary classifier to classify face reactions (positive, negative)
     * Train classifier to play RPS (Multi-Class)
     * Train classifier to classify multi watches (Multi-Label)

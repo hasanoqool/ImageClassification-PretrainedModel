@@ -1,5 +1,5 @@
 # ImageClassification-TransferLearning
-Classification and Transfer Learning for images
+Classification, Pretrained models, and Augmentation for images
 
 # Overview
 * This repo consists of 6 main topics:

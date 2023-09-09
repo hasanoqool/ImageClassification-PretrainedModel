@@ -102,7 +102,7 @@ Classification, Pretrained models, and Augmentation for images.
 * Test accuracy : <b>70%</b>
 #
 ## Running pretrained-keras.py
-* Classify images using a <b>pre-trained network (InceptionV3)<b> using the Keras API.
+* Classify images using a <b>pretrained neural network (InceptionV3)<b> using the Keras API.
 
     | Label | Class | Probability |
     | :---         |     :---:      |          ---: |
@@ -117,7 +117,7 @@ Classification, Pretrained models, and Augmentation for images.
     ![dog](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/dog_result.png)
 #
 ## Running pretrained-tf.py
-* Classify images using a <b>pre-trained network (ResNetV2152)<b> using the TF Hub.
+* Classify images using a <b>pretrained neural network (ResNetV2152)<b> using the TF Hub.
 
 * Sample Image Result. 
 

@@ -113,13 +113,14 @@ def main():
 
     train_paths, test_paths = train_test_split(image_paths, test_size=0.2, random_state=SEED)
 
-    #without augmentation
     BATCH_SIZE = 64
     BUFFER_SIZE = 1024
+    EPOCHS = 40
+
+    #without augmentation
     train_dataset = (prepare_dataset(train_paths).batch(BATCH_SIZE).shuffle(buffer_size=BUFFER_SIZE).prefetch(buffer_size=BUFFER_SIZE))
     test_dataset = (prepare_dataset(test_paths).batch(BATCH_SIZE).prefetch(buffer_size=BUFFER_SIZE))
 
-    EPOCHS = 40
     model = build_network(64, 64, 3, len(CLASSES))
     model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
     history = model.fit(train_dataset,
@@ -127,6 +128,20 @@ def main():
     result = model.evaluate(test_dataset)
     print(f'Test accuracy: {result[1]}')
     plot_model_history(history, 'accuracy', 'normal')
+    #without augmentation
+
+    #with augmentation
+    train_dataset = (prepare_dataset(train_paths).map(augment, num_parallel_calls=AUTOTUNE).batch(BATCH_SIZE).shuffle(buffer_size=BUFFER_SIZE).prefetch(buffer_size=BUFFER_SIZE))
+    test_dataset = (prepare_dataset(test_paths).batch(BATCH_SIZE).prefetch(buffer_size=BUFFER_SIZE))
+
+    model = build_network(64, 64, 3, len(CLASSES))
+    model.compile(loss='categorical_crossentropy', optimizer='rmsprop', metrics=['accuracy'])
+    history = model.fit(train_dataset, validation_data=test_dataset, epochs=EPOCHS)
+    result = model.evaluate(test_dataset)
+    print(f'Test accuracy: {result[1]}')
+    plot_model_history(history, 'accuracy', 'augmented')
+    #with augmentation
+
 
 #run script
 if __name__ == "__main__":

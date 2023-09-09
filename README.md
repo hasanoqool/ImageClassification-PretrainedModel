@@ -136,4 +136,6 @@ Classification, Pretrained models, and Augmentation for images.
      Test accuracy: 0.66
 
     ![with](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_augmented.png)    
- 
+ #
+## Contact
+* Reach me out here: https://www.linkedin.com/in/hasanoqool/

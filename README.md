@@ -1,18 +1,18 @@
 # ImageClassification-PretrainedModel
-Classification, Pretrained models, and Augmentation for images
+Classification, Pretrained models, and Augmentation for images.
 
 # Overview
 * This repo consists of 6 main topics:
-    * Creating a binary classifier to detect smiles (positive, negative)
-    * Creating a multi-class classifier to play Rock Paper Scissors
-    * Creating a multi-label classifier to label watches
+    * Train a binary classifier to classify face reactions (positive, negative)
+    * Train classifier to play RPS (Multi-Class)
+    * Train classifier to classify multi watches (Multi-Label)
     * Implementing ResNet from scratch
-    * Classifying images with a pre-trained network using the Keras API & TensorFlow Hub
-    * Using data augmentation to improve performance with the Keras API, tf.data and tf.image APIs
+    * Classify images using a pre-trained network using the Keras API & TensorFlow Hub
+    * Apply Data augmentation for improving performance with the Keras API, tf.data and tf.image APIs
 
 #
 ## Running detect_smiles.py
-* Train a smile classifier from scratch on the <b>SMILEs dataset</b>.
+* Train a binary classifier to classify face reactions (positive, negative) on the <b>SMILEs dataset</b>.
 * Dataset LINK : <b>https://github.com/hromi/SMILEsmileD/tree/master</b>
 
 * <b>Sample Images</b> --> up (Negative) | down (Positive)
@@ -36,7 +36,7 @@ Classification, Pretrained models, and Augmentation for images
     |  0.2077 |  0.9225 |
 #
 ## Running rock-paper-scissors.py
-* Creating a multi-class classifier to play <b>rock paper scissors</b>.
+* Train classifier to play RPS <b>rock paper scissors</b>.
 * Dataset LINK : <b>https://www.kaggle.com/datasets/drgfreeman/rockpaperscissors</b>
 
 * <b>Sample Images</b> --> 1st (rock) | 2nd (paper) | 3rd (scissors)
@@ -62,7 +62,7 @@ Classification, Pretrained models, and Augmentation for images
     |  0.2344 |  0.9338 |
 #
 ## Running watches.py
-* Creating a multi-label classifier to label <b>watches</b>.
+* Train classifier to label <b>watches</b>.
 * Dataset LINK : <b>https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-small</b>
 
 * <b>Sample Image from test data</b> 
@@ -124,7 +124,7 @@ Classification, Pretrained models, and Augmentation for images
     ![car](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/beetle_result.png)
 #
 ## aug_keras.py
-* Using data augmentation to improve performance with the Keras API.
+* Apply <b>Data augmentation</b> for improving performance with the Keras API.
 * Dataset LINK : https://data.caltech.edu/records/mzrjq-6wc02
 
 * Before <b>Augmentation</b>: 
@@ -136,5 +136,17 @@ Classification, Pretrained models, and Augmentation for images
      Test accuracy: 0.66
 
     ![with](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_augmented.png)    
+#
+## aug_tf.py
+* Apply <b>Data augmentation</b> for improving performance with the TF.
+* Dataset LINK : https://data.caltech.edu/records/mzrjq-6wc02
 
+* Before <b>Augmentation</b>: 
+     Test accuracy: 0.62
 
+    ![without](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_without_aug.png)
+
+* After <b>Augmentation</b>:
+     Test accuracy: 0.66
+
+    ![with](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_augmented.png)   

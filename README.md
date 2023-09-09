@@ -1,4 +1,4 @@
-# ImageClassification-TransferLearning
+# ImageClassification-PretrainedModel
 Classification, Pretrained models, and Augmentation for images
 
 # Overview

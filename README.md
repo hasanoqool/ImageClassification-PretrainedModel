@@ -136,17 +136,4 @@ Classification, Pretrained models, and Augmentation for images.
      Test accuracy: 0.66
 
     ![with](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_augmented.png)    
-#
-## aug_tf.py
-* Apply <b>Data augmentation</b> for improving performance with the TF.
-* Dataset LINK : https://data.caltech.edu/records/mzrjq-6wc02
 
-* Before <b>Augmentation</b>: 
-     Test accuracy: 0.62
-
-    ![without](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_without_aug.png)
-
-* After <b>Augmentation</b>:
-     Test accuracy: 0.66
-
-    ![with](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/keras_augmented.png)   

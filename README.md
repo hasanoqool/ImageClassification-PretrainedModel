@@ -102,7 +102,7 @@ Classification, Pretrained models, and Augmentation for images.
 * Test accuracy : <b>70%</b>
 #
 ## Running pretrained-keras.py
-* Classifying images with a <b>pre-trained network (InceptionV3)<b> using the Keras API.
+* Classify images using a <b>pre-trained network (InceptionV3)<b> using the Keras API.
 
     | Label | Class | Probability |
     | :---         |     :---:      |          ---: |

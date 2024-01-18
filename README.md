@@ -117,7 +117,7 @@ Classification, Pretrained models, and Augmentation for images.
     ![dog](https://github.com/hasanoqool/ImageClassification-TransferLearning/blob/main/images/dog_result.png)
 #
 ## Running pretrained-tf.py
-* Classify images using a <b>pretrained neural network (ResNetV2152)<b> using the TF Hub.
+* Classify images using a <b>pretrained neural network (ResNet)<b> using the TF Hub.
 
 * Sample Image Result. 
 
